@@ -1,2 +1,1 @@
-Gitaran merupakan aplikasi edukasi instrumen gitar yang dikhususkan untuk tingkatan pemula hingga menengah. Penggunanya dapat mempelajari gitar secara bertahap melalui
-materi-materi dan contoh kunci-kunci gitar yang telah disediakan, sehingga pengguna akan lebih familiar terhadap instrumen gitar.
+Ini merupakan file project dari gitaran. Untuk versi yang sudah di-build bisa didownload pada link ini: https://drive.google.com/file/d/1VC00AejGSIF9Q4OzHk6JVYkYbZ07cmOu/view?usp=sharing
