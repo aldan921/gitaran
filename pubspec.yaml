@@ -1,0 +1,490 @@
+name: gitaran
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  audioplayers: ^0.20.1
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  get: ^4.6.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+  - images/logo.jpg
+  - images/background.jpg
+  - images/logoapp.png  
+  - assets/audio.mp3
+
+# AUDIO-AUDIO CHORDS______________________
+  # openChordsMajor
+  - assets/openChordsMajor/C.mp3
+  - assets/openChordsMajor/D.mp3
+  - assets/openChordsMajor/E.mp3
+  - assets/openChordsMajor/G.mp3
+  - assets/openChordsMajor/A.mp3
+
+  # openChordsMinor
+  - assets/openChordsMinor/Dm.mp3
+  - assets/openChordsMinor/Em.mp3
+  - assets/openChordsMinor/Am.mp3
+
+  # minorSeventhChords
+  - assets/minorSeventhChords/Dm7.mp3
+  - assets/minorSeventhChords/Em7.mp3
+  - assets/minorSeventhChords/Am7.mp3
+
+  # majorSeventhChords
+  - assets/majorSeventhChords/C7.mp3
+  - assets/majorSeventhChords/D7.mp3
+  - assets/majorSeventhChords/E7.mp3
+  - assets/majorSeventhChords/G7.mp3
+  - assets/majorSeventhChords/A7.mp3
+  - assets/majorSeventhChords/B7.mp3
+
+  # suspendedChords
+  - assets/suspendedChords/Dsus.mp3
+  - assets/suspendedChords/Esus.mp3
+  - assets/suspendedChords/Asus.mp3
+
+  #fifthBarreChords
+    #ABarreChords
+  - assets/fifthBarreChords/ABarreChords/A.mp3
+  - assets/fifthBarreChords/ABarreChords/A7.mp3
+  - assets/fifthBarreChords/ABarreChords/Am.mp3
+  - assets/fifthBarreChords/ABarreChords/Am7.mp3
+  - assets/fifthBarreChords/ABarreChords/Asus.mp3
+
+    #BBarreChords
+  - assets/fifthBarreChords/BBarreChords/B.mp3
+  - assets/fifthBarreChords/BBarreChords/B7.mp3
+  - assets/fifthBarreChords/BBarreChords/Bm.mp3
+  - assets/fifthBarreChords/BBarreChords/Bm7.mp3
+  - assets/fifthBarreChords/BBarreChords/Bsus.mp3
+
+    #CBarreChords
+  - assets/fifthBarreChords/CBarreChords/C.mp3
+  - assets/fifthBarreChords/CBarreChords/C7.mp3
+  - assets/fifthBarreChords/CBarreChords/Cm.mp3
+  - assets/fifthBarreChords/CBarreChords/Cm7.mp3
+  - assets/fifthBarreChords/CBarreChords/Csus.mp3
+
+    #DBarreChords
+  - assets/fifthBarreChords/DBarreChords/D.mp3
+  - assets/fifthBarreChords/DBarreChords/D7.mp3
+  - assets/fifthBarreChords/DBarreChords/Dm.mp3
+  - assets/fifthBarreChords/DBarreChords/Dm7.mp3
+  - assets/fifthBarreChords/DBarreChords/Dsus.mp3
+
+    #EBarreChords
+  - assets/fifthBarreChords/EBarreChords/E.mp3
+  - assets/fifthBarreChords/EBarreChords/E7.mp3
+  - assets/fifthBarreChords/EBarreChords/Em.mp3
+  - assets/fifthBarreChords/EBarreChords/Em7.mp3
+  - assets/fifthBarreChords/EBarreChords/Esus.mp3
+
+    #FBarreChords
+  - assets/fifthBarreChords/FBarreChords/F.mp3
+  - assets/fifthBarreChords/FBarreChords/F7.mp3
+  - assets/fifthBarreChords/FBarreChords/Fm.mp3
+  - assets/fifthBarreChords/FBarreChords/Fm7.mp3
+  - assets/fifthBarreChords/FBarreChords/Fsus.mp3
+
+    #GBarreChords
+  - assets/fifthBarreChords/GBarreChords/G.mp3
+  - assets/fifthBarreChords/GBarreChords/G7.mp3
+  - assets/fifthBarreChords/GBarreChords/Gm.mp3
+  - assets/fifthBarreChords/GBarreChords/Gm7.mp3
+  - assets/fifthBarreChords/GBarreChords/Gsus.mp3
+
+  #sixthBarreChords
+    #ABarreChords
+  - assets/sixthBarreChords/ABarreChords/A.mp3
+  - assets/sixthBarreChords/ABarreChords/A7.mp3
+  - assets/sixthBarreChords/ABarreChords/Am.mp3
+  - assets/sixthBarreChords/ABarreChords/Am7.mp3
+  - assets/sixthBarreChords/ABarreChords/Asus.mp3
+
+    #BBarreChords
+  - assets/sixthBarreChords/BBarreChords/B.mp3
+  - assets/sixthBarreChords/BBarreChords/B7.mp3
+  - assets/sixthBarreChords/BBarreChords/Bm.mp3
+  - assets/sixthBarreChords/BBarreChords/Bm7.mp3
+  - assets/sixthBarreChords/BBarreChords/Bsus.mp3
+
+    #CBarreChords
+  - assets/sixthBarreChords/CBarreChords/C.mp3
+  - assets/sixthBarreChords/CBarreChords/C7.mp3
+  - assets/sixthBarreChords/CBarreChords/Cm.mp3
+  - assets/sixthBarreChords/CBarreChords/Cm7.mp3
+  - assets/sixthBarreChords/CBarreChords/Csus.mp3
+
+    #DBarreChords
+  - assets/sixthBarreChords/DBarreChords/D.mp3
+  - assets/sixthBarreChords/DBarreChords/D7.mp3
+  - assets/sixthBarreChords/DBarreChords/Dm.mp3
+  - assets/sixthBarreChords/DBarreChords/Dm7.mp3
+  - assets/sixthBarreChords/DBarreChords/Dsus.mp3
+
+    #FBarreChords
+  - assets/sixthBarreChords/FBarreChords/F.mp3
+  - assets/sixthBarreChords/FBarreChords/F7.mp3
+  - assets/sixthBarreChords/FBarreChords/Fm.mp3
+  - assets/sixthBarreChords/FBarreChords/Fm7.mp3
+  - assets/sixthBarreChords/FBarreChords/Fsus.mp3
+
+    #GBarreChords
+  - assets/sixthBarreChords/GBarreChords/G.mp3
+  - assets/sixthBarreChords/GBarreChords/G7.mp3
+  - assets/sixthBarreChords/GBarreChords/Gm.mp3
+  - assets/sixthBarreChords/GBarreChords/Gm7.mp3
+  - assets/sixthBarreChords/GBarreChords/Gsus.mp3
+
+
+# GAMBAR-GAMBAR CHORDS____________________
+  # openChordsMajor
+  - images/chords/openChordsMajor/C.jpg
+  - images/chords/openChordsMajor/D.jpg
+  - images/chords/openChordsMajor/E.jpg
+  - images/chords/openChordsMajor/G.jpg
+  - images/chords/openChordsMajor/A.jpg
+  - images/chords/openChordsMajor/C.jpeg
+  - images/chords/openChordsMajor/D.jpeg
+  - images/chords/openChordsMajor/E.jpeg
+  - images/chords/openChordsMajor/G.jpeg
+  - images/chords/openChordsMajor/A.jpeg
+  # openChordsMajor
+
+  # openChordsMinor
+  - images/chords/openChordsMinor/Am.jpg
+  - images/chords/openChordsMinor/Dm.jpg
+  - images/chords/openChordsMinor/Em.jpg
+  - images/chords/openChordsMinor/Am.jpeg
+  - images/chords/openChordsMinor/Dm.jpeg
+  - images/chords/openChordsMinor/Em.jpeg
+  # openChordsMinor
+
+  # minorSeventhChords
+  - images/chords/minorSeventhChords/Am7.jpg
+  - images/chords/minorSeventhChords/Dm7.jpg
+  - images/chords/minorSeventhChords/Em7.jpg
+  - images/chords/minorSeventhChords/Am7.jpeg
+  - images/chords/minorSeventhChords/Dm7.jpeg
+  - images/chords/minorSeventhChords/Em7.jpeg
+  # minorSeventhChords
+
+  # majorSeventhChords
+  - images/chords/majorSeventhChords/C7.jpg
+  - images/chords/majorSeventhChords/D7.jpg
+  - images/chords/majorSeventhChords/E7.jpg
+  - images/chords/majorSeventhChords/G7.jpg
+  - images/chords/majorSeventhChords/A7.jpg
+  - images/chords/majorSeventhChords/B7.jpg
+  - images/chords/majorSeventhChords/C7.jpeg
+  - images/chords/majorSeventhChords/D7.jpeg
+  - images/chords/majorSeventhChords/E7.jpeg
+  - images/chords/majorSeventhChords/G7.jpeg
+  - images/chords/majorSeventhChords/A7.jpeg
+  - images/chords/majorSeventhChords/B7.jpeg
+  # majorSeventhChords
+
+  # suspendedChords
+  - images/chords/suspendedChords/Asus.jpg
+  - images/chords/suspendedChords/Dsus.jpg
+  - images/chords/suspendedChords/Esus.jpg
+  - images/chords/suspendedChords/Asus.jpeg
+  - images/chords/suspendedChords/Dsus.jpeg
+  - images/chords/suspendedChords/Esus.jpeg
+  # suspendedChords
+
+  # sixthBarreChords
+    # FBarreChords
+  - images/chords/sixthBarreChords/FBarreChords/F.jpg
+  - images/chords/sixthBarreChords/FBarreChords/F7.jpg
+  - images/chords/sixthBarreChords/FBarreChords/Fm.jpg
+  - images/chords/sixthBarreChords/FBarreChords/Fm7.jpg
+  - images/chords/sixthBarreChords/FBarreChords/Fsus.jpg
+  - images/chords/sixthBarreChords/FBarreChords/F.jpeg
+  - images/chords/sixthBarreChords/FBarreChords/F7.jpeg
+  - images/chords/sixthBarreChords/FBarreChords/Fm.jpeg
+  - images/chords/sixthBarreChords/FBarreChords/Fm7.jpeg
+  - images/chords/sixthBarreChords/FBarreChords/Fsus.jpeg
+    # FBarreChords
+
+    # GBarreChords
+  - images/chords/sixthBarreChords/GBarreChords/G.jpg
+  - images/chords/sixthBarreChords/GBarreChords/G7.jpg
+  - images/chords/sixthBarreChords/GBarreChords/Gm.jpg
+  - images/chords/sixthBarreChords/GBarreChords/Gm7.jpg
+  - images/chords/sixthBarreChords/GBarreChords/Gsus.jpg
+  - images/chords/sixthBarreChords/GBarreChords/G.jpeg
+  - images/chords/sixthBarreChords/GBarreChords/G7.jpeg
+  - images/chords/sixthBarreChords/GBarreChords/Gm.jpeg
+  - images/chords/sixthBarreChords/GBarreChords/Gm7.jpeg
+  - images/chords/sixthBarreChords/GBarreChords/Gsus.jpeg
+    # GBarreChords
+
+    # ABarreChords
+  - images/chords/sixthBarreChords/ABarreChords/A.jpg
+  - images/chords/sixthBarreChords/ABarreChords/A7.jpg
+  - images/chords/sixthBarreChords/ABarreChords/Am.jpg
+  - images/chords/sixthBarreChords/ABarreChords/Am7.jpg
+  - images/chords/sixthBarreChords/ABarreChords/Asus.jpg
+  - images/chords/sixthBarreChords/ABarreChords/A.jpeg
+  - images/chords/sixthBarreChords/ABarreChords/A7.jpeg
+  - images/chords/sixthBarreChords/ABarreChords/Am.jpeg
+  - images/chords/sixthBarreChords/ABarreChords/Am7.jpeg
+  - images/chords/sixthBarreChords/ABarreChords/Asus.jpeg
+    # ABarreChords
+
+    # BBarreChords
+  - images/chords/sixthBarreChords/BBarreChords/B.jpg
+  - images/chords/sixthBarreChords/BBarreChords/B7.jpg
+  - images/chords/sixthBarreChords/BBarreChords/Bm.jpg
+  - images/chords/sixthBarreChords/BBarreChords/Bm7.jpg
+  - images/chords/sixthBarreChords/BBarreChords/Bsus.jpg
+  - images/chords/sixthBarreChords/BBarreChords/B.jpeg
+  - images/chords/sixthBarreChords/BBarreChords/B7.jpeg
+  - images/chords/sixthBarreChords/BBarreChords/Bm.jpeg
+  - images/chords/sixthBarreChords/BBarreChords/Bm7.jpeg
+  - images/chords/sixthBarreChords/BBarreChords/Bsus.jpeg
+    # BBarreChords
+
+    # CBarreChords
+  - images/chords/sixthBarreChords/CBarreChords/C.jpg
+  - images/chords/sixthBarreChords/CBarreChords/C7.jpg
+  - images/chords/sixthBarreChords/CBarreChords/Cm.jpg
+  - images/chords/sixthBarreChords/CBarreChords/Cm7.jpg
+  - images/chords/sixthBarreChords/CBarreChords/Csus.jpg
+  - images/chords/sixthBarreChords/CBarreChords/C.jpeg
+  - images/chords/sixthBarreChords/CBarreChords/C7.jpeg
+  - images/chords/sixthBarreChords/CBarreChords/Cm.jpeg
+  - images/chords/sixthBarreChords/CBarreChords/Cm7.jpeg
+  - images/chords/sixthBarreChords/CBarreChords/Csus.jpeg
+    # CBarreChords
+  
+    # DBarreChords
+  - images/chords/sixthBarreChords/DBarreChords/D.jpg
+  - images/chords/sixthBarreChords/DBarreChords/D7.jpg
+  - images/chords/sixthBarreChords/DBarreChords/Dm.jpg
+  - images/chords/sixthBarreChords/DBarreChords/Dm7.jpg
+  - images/chords/sixthBarreChords/DBarreChords/Dsus.jpg
+  - images/chords/sixthBarreChords/DBarreChords/D.jpeg
+  - images/chords/sixthBarreChords/DBarreChords/D7.jpeg
+  - images/chords/sixthBarreChords/DBarreChords/Dm.jpeg
+  - images/chords/sixthBarreChords/DBarreChords/Dm7.jpeg
+  - images/chords/sixthBarreChords/DBarreChords/Dsus.jpeg
+    # DBarreChords
+
+    # EBarreChords
+  - images/chords/sixthBarreChords/EBarreChords/E.jpg
+  - images/chords/sixthBarreChords/EBarreChords/E7.jpg
+  - images/chords/sixthBarreChords/EBarreChords/Em.jpg
+  - images/chords/sixthBarreChords/EBarreChords/Em7.jpg
+  - images/chords/sixthBarreChords/EBarreChords/Esus.jpg
+  - images/chords/sixthBarreChords/EBarreChords/E.jpeg
+  - images/chords/sixthBarreChords/EBarreChords/E7.jpeg
+  - images/chords/sixthBarreChords/EBarreChords/Em.jpeg
+  - images/chords/sixthBarreChords/EBarreChords/Em7.jpeg
+  - images/chords/sixthBarreChords/EBarreChords/Esus.jpeg
+    # EBarreChords
+  # sixthBarreChords
+
+
+  # fifthBarreChords
+    # FBarreChords
+  - images/chords/fifthBarreChords/FBarreChords/F.jpg
+  - images/chords/fifthBarreChords/FBarreChords/F7.jpg
+  - images/chords/fifthBarreChords/FBarreChords/Fm.jpg
+  - images/chords/fifthBarreChords/FBarreChords/Fm7.jpg
+  - images/chords/fifthBarreChords/FBarreChords/Fsus.jpg
+  - images/chords/fifthBarreChords/FBarreChords/F.jpeg
+  - images/chords/fifthBarreChords/FBarreChords/F7.jpeg
+  - images/chords/fifthBarreChords/FBarreChords/Fm.jpeg
+  - images/chords/fifthBarreChords/FBarreChords/Fm7.jpeg
+  - images/chords/fifthBarreChords/FBarreChords/Fsus.jpeg
+    # FBarreChords
+
+    # GBarreChords
+  - images/chords/fifthBarreChords/GBarreChords/G.jpg
+  - images/chords/fifthBarreChords/GBarreChords/G7.jpg
+  - images/chords/fifthBarreChords/GBarreChords/Gm.jpg
+  - images/chords/fifthBarreChords/GBarreChords/Gm7.jpg
+  - images/chords/fifthBarreChords/GBarreChords/Gsus.jpg
+  - images/chords/fifthBarreChords/GBarreChords/G.jpeg
+  - images/chords/fifthBarreChords/GBarreChords/G7.jpeg
+  - images/chords/fifthBarreChords/GBarreChords/Gm.jpeg
+  - images/chords/fifthBarreChords/GBarreChords/Gm7.jpeg
+  - images/chords/fifthBarreChords/GBarreChords/Gsus.jpeg
+    # GBarreChords
+
+    # ABarreChords
+  - images/chords/fifthBarreChords/ABarreChords/A.jpg
+  - images/chords/fifthBarreChords/ABarreChords/A7.jpg
+  - images/chords/fifthBarreChords/ABarreChords/Am.jpg
+  - images/chords/fifthBarreChords/ABarreChords/Am7.jpg
+  - images/chords/fifthBarreChords/ABarreChords/Asus.jpg
+  - images/chords/fifthBarreChords/ABarreChords/A.jpeg
+  - images/chords/fifthBarreChords/ABarreChords/A7.jpeg
+  - images/chords/fifthBarreChords/ABarreChords/Am.jpeg
+  - images/chords/fifthBarreChords/ABarreChords/Am7.jpeg
+  - images/chords/fifthBarreChords/ABarreChords/Asus.jpeg
+    # ABarreChords
+
+    # BBarreChords
+  - images/chords/fifthBarreChords/BBarreChords/B.jpg
+  - images/chords/fifthBarreChords/BBarreChords/B7.jpg
+  - images/chords/fifthBarreChords/BBarreChords/Bm.jpg
+  - images/chords/fifthBarreChords/BBarreChords/Bm7.jpg
+  - images/chords/fifthBarreChords/BBarreChords/Bsus.jpg
+  - images/chords/fifthBarreChords/BBarreChords/B.jpeg
+  - images/chords/fifthBarreChords/BBarreChords/B7.jpeg
+  - images/chords/fifthBarreChords/BBarreChords/Bm.jpeg
+  - images/chords/fifthBarreChords/BBarreChords/Bm7.jpeg
+  - images/chords/fifthBarreChords/BBarreChords/Bsus.jpeg
+    # BBarreChords
+
+    # CBarreChords
+  - images/chords/fifthBarreChords/CBarreChords/C.jpg
+  - images/chords/fifthBarreChords/CBarreChords/C7.jpg
+  - images/chords/fifthBarreChords/CBarreChords/Cm.jpg
+  - images/chords/fifthBarreChords/CBarreChords/Cm7.jpg
+  - images/chords/fifthBarreChords/CBarreChords/Csus.jpg
+  - images/chords/fifthBarreChords/CBarreChords/C.jpeg
+  - images/chords/fifthBarreChords/CBarreChords/C7.jpeg
+  - images/chords/fifthBarreChords/CBarreChords/Cm.jpeg
+  - images/chords/fifthBarreChords/CBarreChords/Cm7.jpeg
+  - images/chords/fifthBarreChords/CBarreChords/Csus.jpeg
+    # CBarreChords
+  
+    # DBarreChords
+  - images/chords/fifthBarreChords/DBarreChords/D.jpg
+  - images/chords/fifthBarreChords/DBarreChords/D7.jpg
+  - images/chords/fifthBarreChords/DBarreChords/Dm.jpg
+  - images/chords/fifthBarreChords/DBarreChords/Dm7.jpg
+  - images/chords/fifthBarreChords/DBarreChords/Dsus.jpg
+  - images/chords/fifthBarreChords/DBarreChords/D.jpeg
+  - images/chords/fifthBarreChords/DBarreChords/D7.jpeg
+  - images/chords/fifthBarreChords/DBarreChords/Dm.jpeg
+  - images/chords/fifthBarreChords/DBarreChords/Dm7.jpeg
+  - images/chords/fifthBarreChords/DBarreChords/Dsus.jpeg
+    # DBarreChords
+
+    # EBarreChords
+  - images/chords/fifthBarreChords/EBarreChords/E.jpg
+  - images/chords/fifthBarreChords/EBarreChords/E7.jpg
+  - images/chords/fifthBarreChords/EBarreChords/Em.jpg
+  - images/chords/fifthBarreChords/EBarreChords/Em7.jpg
+  - images/chords/fifthBarreChords/EBarreChords/Esus.jpg
+  - images/chords/fifthBarreChords/EBarreChords/E.jpeg
+  - images/chords/fifthBarreChords/EBarreChords/E7.jpeg
+  - images/chords/fifthBarreChords/EBarreChords/Em.jpeg
+  - images/chords/fifthBarreChords/EBarreChords/Em7.jpeg
+  - images/chords/fifthBarreChords/EBarreChords/Esus.jpeg
+    # EBarreChords
+  # fifthBarreChords
+
+  #__________________MATERI__________________#
+
+  #anatomiGitar
+  - images/materi/anatomiGitar/head.jpg
+  - images/materi/anatomiGitar/neck.jpg
+  - images/materi/anatomiGitar/body.jpg
+  #anatomiGitar
+
+  #senarGitar
+  - images/materi/senarGitar/senarCuk.jpg
+  #senarGitar
+
+  #posisiMegang
+  - images/materi/posisiMegang/posisiMegang.jpg
+  #posisiMegang
+
+  #membacaChordbox
+  - images/materi/membacaChordbox/imageOne.jpg
+  - images/materi/membacaChordbox/imageTwo.jpg
+  - images/materi/membacaChordbox/imageThree.jpg
+  #membacaChordbox
+
+  #membacaTab
+  - images/materi/membacaTab/imageOne.jpg
+  - images/materi/membacaTab/imageTwo.jpg
+  - images/materi/membacaTab/imageThree.jpg
+  #membacaTab
+
+
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
